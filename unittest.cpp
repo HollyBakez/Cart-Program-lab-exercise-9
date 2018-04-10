@@ -79,7 +79,7 @@ string generate_string(int max_length){
     return ret;
 }
 
-TEST_CASE("Product", "product")
+TEST_CASE("Product", "[product]")
 {
   srand(time(NULL));
   SECTION("Object creation (Default constructor)")
@@ -146,7 +146,7 @@ TEST_CASE("Product", "product")
   }
 }
 
-TEST_CASE("Cart", "cart")
+TEST_CASE("Cart", "[cart]")
 {
   SECTION("Object creation")
   {
