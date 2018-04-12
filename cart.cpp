@@ -1,3 +1,5 @@
+//Holland Ho
+//Date:4/12/2018
 /* This program simulates a shopping cart where a user adds items to their cart and displays
    the contents of their cart. It's implementation uses the Cart and Product classes.
 */
@@ -12,7 +14,7 @@ int main()
   string prodName = ""; // Temporary holder of the product name
   double prodPrice = 0.0; // Temporary holder of the product price
   // Insert code here to create a Cart object
-  
+  Cart cart;
   int freeProdNum = 0; // Temporary holder for the product number
 
 
@@ -30,9 +32,10 @@ int main()
       cin.ignore();
       // Insert code here to create a Product object using the constructor that
       // accepts a product name and price
-  
+      Product prod;
+      Product prod(prodName, prodPrice);
       // Insert code here to add the product to the cart
-  
+      addProduct(prodName);
       cout << endl << prodName << " added to cart." << endl << endl;
     }
   }while(prodName != "q!");
@@ -40,7 +43,7 @@ int main()
     cout << endl << "Products purchased" << endl; // Display menu
   cout << "==================" << endl;
   // Insert code here to display the contents of the cart
-  
+  cart.display();
   cout << endl << "SURPRISE! We have a buy-one-get-one offer today! Which item would you like to get free? Input the product number: "; // Display surprise message and get product number of the free product
   cin >> freeProdNum;
   
