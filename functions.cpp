@@ -13,7 +13,8 @@ void Cart::display()
  {
    for(int k = 0; k < size; k++)
    {
-     cout << size+1 << "." << "1 x "<< contents[k]<<" @ "<< price<<endl;
+     cout<< k+1;
+     contents[k].display();
  }
 void Cart::getProduct(Product prodNum)
  {
