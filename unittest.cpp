@@ -78,7 +78,15 @@ string generate_string(int max_length){
     }
     return ret;
 }
-
+      for(int i = 1; i <= cartSize; i++)
+197
+      {
+198
+        CHECK(c.getProduct(i).getName() == prods[i].getName());
+199
+        CHECK(c.getProduct(i).getPrice() == prods[i].getPrice());
+200
+      }
 TEST_CASE("Product", "[product]")
 {
   srand(time(NULL));
@@ -193,10 +201,10 @@ TEST_CASE("Cart", "[cart]")
         prods[i] = temp;
       }
       CHECK(c.getSize() == cartSize);
-      for(int i = 1; i <= cartSize; i++)
+      for(int i = 0; i < cartSize; i++)
       {
-        CHECK(c.getProduct(i).getName() == prods[i].getName());
-        CHECK(c.getProduct(i).getPrice() == prods[i].getPrice());
+        CHECK(c.getProduct(i+1).getName() == prods[i].getName());
+        CHECK(c.getProduct(i+1).getPrice() == prods[i].getPrice());
       }
     }
   }
