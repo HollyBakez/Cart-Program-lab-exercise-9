@@ -78,15 +78,7 @@ string generate_string(int max_length){
     }
     return ret;
 }
-      for(int i = 1; i <= cartSize; i++)
-197
-      {
-198
-        CHECK(c.getProduct(i).getName() == prods[i].getName());
-199
-        CHECK(c.getProduct(i).getPrice() == prods[i].getPrice());
-200
-      }
+
 TEST_CASE("Product", "[product]")
 {
   srand(time(NULL));
