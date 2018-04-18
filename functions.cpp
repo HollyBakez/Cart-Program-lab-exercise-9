@@ -18,6 +18,7 @@ void Cart::display()
  }
 void Cart::getProduct(Product prodNum)
  {
-   
+     contents[prodNum-1] = prodNum;
+     contents[prodNum-1].display();
  
  }

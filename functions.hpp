@@ -22,7 +22,7 @@ class Product
      name = "Unnamed product";
      price = 0.0;
    }
-  Product(string n, double p);
+  Product(string n, double p)
    {
      name = n;
      price = p;
@@ -47,7 +47,7 @@ class Product
   {
     cout<< "1" << " x " << name << " @ "<< "$"<< price;\
   }
-}
+}; // Added ;
 
 class Cart
 {
@@ -66,7 +66,7 @@ class Cart
  void addProduct(Product singleProd);
  void display();
  void getProduct(Product prodNum);
-}
+}; //Added ;
 
 
 #endif
