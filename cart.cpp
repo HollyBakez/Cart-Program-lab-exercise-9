@@ -48,14 +48,15 @@ int main()
   
   // Insert code here to retrieve the product from the cart based on the user's input
   // and assign to a Product object called freeProd
-    prod freeprod = cart.getProduct(freeProdNum);
+    Product freeProd;
+    freeProd = cart.getProduct(freeProdNum);
   // Insert code here to assign the name of the product to prodName
-    prodName = prod freeprod;
+    prodName = freeProd.getName();
   // Display information on the screen.  
   cout << endl << "Congratulations, you will get free " << prodName;
 
   // Insert code here to assign the price of the product to prodPrice
-    prodPrice = prod freeprod;
+    prodPrice = freeProd.getPrice();
   // Display information on the screen.
   cout << "! You just saved $" << prodPrice;
   cout << "! Happy shopping!" << endl; 

@@ -15,10 +15,10 @@ void Cart::display()
    {
      cout<< k+1;
      contents[k].display();
+   }
  }
-void Cart::getProduct(Product prodNum)
+Product Cart::getProduct(int prodNum)
  {
-     contents[prodNum-1] = prodNum;
-     contents[prodNum-1].display();
- 
+     return contents[prodNum-1];
+     
  }

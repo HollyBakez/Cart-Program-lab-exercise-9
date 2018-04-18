@@ -65,7 +65,7 @@ class Cart
   }
  void addProduct(Product singleProd);
  void display();
- void getProduct(Product prodNum);
+ Product getProduct(int prodNum);
 }; //Added ;
 
 
