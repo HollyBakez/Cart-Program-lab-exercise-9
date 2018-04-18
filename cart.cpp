@@ -32,7 +32,7 @@ int main()
       cin.ignore();
       // Insert code here to create a Product object using the constructor that
       // accepts a product name and price
-        Product prod(prodName, prodPrice); //Deleted Product prod;
+        Product prod(prodName, prodPrice);
       // Insert code here to add the product to the cart
       cart.addProduct(prod);
       cout << endl << prodName << " added to cart." << endl << endl;

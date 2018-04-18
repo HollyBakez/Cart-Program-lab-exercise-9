@@ -19,7 +19,6 @@ int main()
   cout << "Please enter the price of the product: ";
   cin >> prodPrice;
   // Insert code here to create the Product object using the appropriate constructor
-  Product prod();
   // that uses name and price from the user.
   Product prod (prodName, prodPrice);
   // Insert code here that calls the display function to show information about the product.
